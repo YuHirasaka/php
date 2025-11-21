@@ -1,14 +1,15 @@
 <?php
-    require_once('config/status_codes.php');
+    require_once('./config/status_codes.php');
 
     $random_numbers = array_rand($status_codes, 4);
 
     foreach ($random_numbers as $index) {
         $options[] = $status_codes[$index];
     }
-    $question = $options[mt_rand(0,3)];
+    $question = $options[mt_rand(0, 3)];
     
 ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -18,12 +19,12 @@
     <link rel="stylesheet" href="css/sanitize.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-
 </head>
+
 <body>
     <header class="header">
         <div class="header__inner">
-            <a class="header__logo" href="/index.php">Status Code Quiz</a>
+            <a class="header__logo" href="/php03/index.php">Status Code Quiz</a>
         </div>
     </header>
     

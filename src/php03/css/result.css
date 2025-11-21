@@ -6,10 +6,10 @@
 .result {
     text-align: center;
 }
-.result__text__correct {
+.result__text--correct {
     color: #ff0000;
 }
-.result__text__incorrect {
+.result__text--incorrect {
     color: #0000ff;
 }
 .answer-table {
